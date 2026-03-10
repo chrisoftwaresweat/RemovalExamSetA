@@ -78,7 +78,7 @@ public class RemovalSetA {
     static void problemThree(Scanner scanner){
         int n=9;
         //outer loop
-        for (int i=1; i<=9; i++){
+        for (int i=1; i<=n; i++){
             /*
             u only need one increasing numerical pattern
             and print i instead of j so it prints 1 22 33 rather than 1 12 123
@@ -104,3 +104,4 @@ public class RemovalSetA {
         }
     }
 }
+
