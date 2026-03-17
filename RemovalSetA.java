@@ -1,36 +1,6 @@
 import java.util.Scanner;
-//READ THIS: DON'T MIND THE MAIN METHOD, IF U WANNA REVIEW GO STRAIGHT TO SUB METHODS!
 //REMOVE THE COMMENTS IF U WANNA USE THE CODE
 public class RemovalSetA {
-    public static void main(String[] args){
-        Scanner scanner=new Scanner(System.in);
-        int choice;
-        do {
-            System.out.println("\n\nWE HAVE 4 PROBLEMS");
-            System.out.print("(1)Right-Shifted Star Pattern\n(2)Decreasing Star Pattern with shift\n(3)Repeated Number Triangle\n(4)Number Series\n(5)Exit\nWhich one dy wanna run?: ");
-            choice= scanner.nextInt();
-            switch (choice){
-                case 1:
-                    problemOne(scanner);
-                    break;
-                case 2:
-                    problemTwo(scanner);
-                    break;
-                case 3:
-                    problemThree(scanner);
-                    break;
-                case 4:
-                    problemFour(scanner);
-                    break;
-                case 5:
-                    System.out.println("GOOD LUCK ON YOUR EXAM!");
-                    break;
-                default :
-                    System.out.println("Only choose numbers from 1-4 and 5 to exit");
-            }
-        }while(choice!=5);
-        scanner.close();
-    }
     /*
     FOR THE FIRST 3 PROBLEMS REMEMBER THESE PATTERN
     (INITIALIZATION; CONDITION)
@@ -103,7 +73,36 @@ public class RemovalSetA {
             second=next;
         }
     }
+    //DON'T MIND THIS: MAIN METHOD
+    public static void main(String[] args){
+        Scanner scanner=new Scanner(System.in);
+        int choice;
+        do {
+            System.out.println("\n\nWE HAVE 4 PROBLEMS");
+            System.out.print("(1)Right-Shifted Star Pattern\n(2)Decreasing Star Pattern with shift\n(3)Repeated Number Triangle\n(4)Number Series\n(5)Exit\nWhich one dy wanna run?: ");
+            choice= scanner.nextInt();
+            switch (choice){
+                case 1:
+                    problemOne(scanner);
+                    break;
+                case 2:
+                    problemTwo(scanner);
+                    break;
+                case 3:
+                    problemThree(scanner);
+                    break;
+                case 4:
+                    problemFour(scanner);
+                    break;
+                case 5:
+                    System.out.println("GOOD LUCK ON YOUR EXAM!");
+                    break;
+                default :
+                    System.out.println("Only choose numbers from 1-4 and 5 to exit");
+            }
+        }while(choice!=5);
+        scanner.close();
+    }
 }
-
 
 
