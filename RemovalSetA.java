@@ -42,7 +42,7 @@ public class RemovalSetA {
     DON'T MEMORIZE SYNTAX; FIND PATTERNS, AND UNDERSTAND IT
      */
     //Problem 1: Right-Shifted Star Pattern
-    static void problemOne(Scanner scanner){
+    private static void problemOne(Scanner scanner){
         System.out.print("Enter how many rows: ");
         int n= scanner.nextInt();
         //inner loop: it has an INCREASING space, and SQUARE/RECTANGLE patterns. for sq/rec patterns just reuse d outer loop.
@@ -59,7 +59,7 @@ public class RemovalSetA {
         }
     }
     //Problem 2: Decreasing Star Pattern with shift
-    static void problemTwo(Scanner scanner){
+    private static void problemTwo(Scanner scanner){
         System.out.print("Enter how many rows: ");
         int n= scanner.nextInt();
         //outer loop
@@ -75,7 +75,7 @@ public class RemovalSetA {
         }
     }
     //Problem 3: Repeated Number Triangle
-    static void problemThree(Scanner scanner){
+    private static void problemThree(Scanner scanner){
         int n=9;
         //outer loop
         for (int i=1; i<=n; i++){
@@ -90,7 +90,7 @@ public class RemovalSetA {
         }
     }
     //Problem 4: Number Series
-    static void problemFour(Scanner scanner){
+    private static void problemFour(Scanner scanner){
         int n=9;
         int first=1, second=2;
         for (int i=1; i<=n; i++){
